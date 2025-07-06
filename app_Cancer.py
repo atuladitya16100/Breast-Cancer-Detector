@@ -77,4 +77,6 @@ gr.Interface(
         "**Created by Aditya Atul** | Scientific ML Interface | Powered by SHAP, Scikit-learn, Gradio"
     ),
     examples=[X.iloc[i].tolist() for i in [0, 100, 200]]
-).launch(server_name="0.0.0.0", server_port=8080)
+).launch(server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 7860))
+        )
