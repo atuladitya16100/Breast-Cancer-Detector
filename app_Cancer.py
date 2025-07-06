@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
 
 # Load and preprocess data
-df = pd.read_csv('/Users/adityaatul/Downloads/data.csv')
+df = pd.read_csv('data.csv')
 X = df.drop(['id', 'Unnamed: 32', 'diagnosis'], axis=1)
 y = df['diagnosis']
 
