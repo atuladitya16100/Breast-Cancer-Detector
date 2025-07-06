@@ -4,7 +4,7 @@ import gradio as gr
 import shap
 import matplotlib.pyplot as plt
 import plotly.express as px
-
+import os 
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
 
